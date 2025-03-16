@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {fetchAPI,submitAPI} from '../api'
+import useScript from '../hooks/useScript'
 
 export default function BookingTable() {
     return (
@@ -37,7 +38,7 @@ const BookingForm = () => {
     useEffect(()=>{
         fetchAvailableTimes(newDate)
     },[])
-    //useScript("https://raw.githubusercontent.com/courseraap/capstone/main/api.js");
+    useScript("https://raw.githubusercontent.com/courseraap/capstone/main/api.js");
     return (
         <form className='booking-table-form' onSubmit={handleSubmit}>
             <label htmlFor="res-date">Choose date</label>
