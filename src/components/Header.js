@@ -4,7 +4,7 @@ import Nav from './Nav'
 
 export default function Header() {
   return (
-    <header>
+    <header className='flex-center-between'>
       <img alt='Little Lemon logo'  src={logo}/>
       <Nav></Nav>
     </header>

@@ -3,9 +3,10 @@ import logo from '../images/Logo.svg'
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className='flex-top-between'>
             <img alt='Little Lemon logo' src={logo} />
             <div className='doormat-navigation'>
+                <h3>Doomat Navigation</h3>
                 <ul>
                     <li><a href='/'>Home</a></li>
                     <li><a href='/'>About</a></li>
@@ -16,6 +17,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div className='contact-info'>
+                <h3>Contact</h3>
                 <div>
                     Adress
                 </div>
@@ -27,6 +29,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className='social-media-links'>
+            <h3>Social media links</h3>
                 <div>
                     Adress
                 </div>
