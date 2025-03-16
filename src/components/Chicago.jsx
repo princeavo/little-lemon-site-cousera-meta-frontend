@@ -1,7 +1,7 @@
 import React from 'react'
-import restaurantFoodImage from '../images/restauranfood.jpg'
+import { Link } from 'react-router-dom'
 
-export default function Chicago() {
+export default function Chicago({image}) {
     return (
         <section className='chicago-section flex-center-between'>
             <div>
@@ -10,9 +10,9 @@ export default function Chicago() {
                 <p className='description'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsam, veritatis exercitationem quia natus est, eum cum doloremque quam ratione totam quisquam placeat voluptas consequuntur quis nobis doloribus praesentium ipsa?
                 </p>
-                <a href="/" className='btn primary'>Reserve a table</a>
+                <Link to="/booking-table" className='btn primary'>Reserve a table</Link>
             </div>
-            <img src={restaurantFoodImage} alt="" />
+            <img src={image} alt="" />
         </section>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../images/Logo.svg'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -8,12 +9,12 @@ export default function Footer() {
             <div className='doormat-navigation'>
                 <h3>Doomat Navigation</h3>
                 <ul>
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/'>About</a></li>
-                    <li><a href='/'>Menu</a></li>
-                    <li><a href='/'>Reservations</a></li>
-                    <li><a href='/'>Order Online</a></li>
-                    <li><a href='/'>Login</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/'>About</Link></li>
+                    <li><Link to='/'>Menu</Link></li>
+                    <li><Link to='/'>Reservations</Link></li>
+                    <li><Link to='/'>Order Online</Link></li>
+                    <li><Link to='/'>Login</Link></li>
                 </ul>
             </div>
             <div className='contact-info'>
@@ -29,7 +30,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className='social-media-links'>
-            <h3>Social media links</h3>
+                <h3>Social media links</h3>
                 <div>
                     Adress
                 </div>

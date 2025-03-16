@@ -4,16 +4,16 @@ import './index.css';
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HomePage from './pages/HomePage';
+import BookingTable from './pages/BookingTable';
+import Layout from './pages/Layout';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          {/* <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
+          <Route path="/booking-table" element={<BookingTable />} />
         </Route>
       </Routes>
     </BrowserRouter>
